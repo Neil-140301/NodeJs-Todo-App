@@ -1,0 +1,35 @@
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###
+GET http://localhost:3000/todos/?category=HOME
+
+###
+GET http://localhost:3000/agenda/?date=2021-4-04
+
+###
+POST https://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 6,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO",
+  "category": "HOME",
+  "dueDate": "2021-02-22"
+}
+
+###
+PUT https://localhost:3000/todos/1
+Content-Type: application/json
+
+{
+  "category": "LEARNING"
+}
